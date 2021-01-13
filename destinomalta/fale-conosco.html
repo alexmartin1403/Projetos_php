@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Destino Malta</title>
+    <link rel="stylesheet" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css"/>
+    <link rel="icon" href="_imagens/bandeira_icon.jpg" type="image/x-icon" />
+    <link rel="shortcut icon" href="_imagens/bandeira_icon.jpg" type="image/x-icon" />
+</head>
+<body>   
+
+
+<div id="interface">
+
+    <header id="cabecalho">
+        
+    <hgroup>
+    <h1>Destino Malta</h1>
+    </hgroup>
+    <img id="icone" src="_imagens/mapa_malta_peq.png"/>
+        <nav id="menu">
+            <h1>Menu Principal</h1>
+            <ul type="disc">
+                <li><a href="index.php">Notícias de Malta</a></li>
+                <li><a href="cidades.html">Cidades de Malta</a></li>
+                <li><a href="fale-conosco.html">Fale Conosco</a></li>     
+                
+                
+            </ul>
+        </nav>
+    </header>
+    <section id="corpo-full">
+        <article id="noticia-principal">
+            <header id="cabecalho-artigo">
+                </br>                
+                <hgroup> 
+                    
+                    <h1>Formulário de Contato</h1>
+                </hgroup>
+            </header>
+
+<form method="post" action="contato.php" name="contato" id="contato" target='iframe' onsubmit="setTimeout(function () { window.location.reload(); alert ('Mesagem enviada com sucesso') }, 10)"><iframe name='iframe' style='display:none;'></iframe>
+
+    <fieldset id="usuario"><legend>Mensagem do Usuário</legend>
+    <p><label for="cNome">Nome:</label><input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome" required oninvalid="setCustomValidity('Favor preencher o nome')" onchange="try{setCustomValidity('')}catch(e){}"/></p>    
+    <p><label for="cMail">E-mail:</label><input type="email" name="tMail" id="cMail" size="20" maxlength="40" required oninvalid="setCustomValidity('Favor preencher o e-mail')" onchange="try{setCustomValidity('')}catch(e){}"/></p>
+        <fieldset id="sexo"><legend>Sexo</legend>
+            <input type="radio" name="tSexo" id="cMasc" value="m" checked/><label for="cMasc">Masculino</label><br/>
+            <input type="radio" name="tSexo" id="cFem" value="f"/><label for="cFem">Feminino</label>
+        </fieldset>        
+        <p><label for="cMsg">Mensagem:</label>
+    <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe aqui seu comentário ou sugestão" required oninvalid="setCustomValidity('Favor preencher o texto')" onchange="try{setCustomValidity('')}catch(e){}"></textarea> </p>
+    </fieldset>    
+<input type="image" name="tEnviar" src="_imagens/botao-enviar.png" />
+</form>
+        </article>
+    <footer id="rodape">
+        <p>Copyright &copy; 2017<br/>
+            <a href="http://facebook.com/cursosemvideo" target="_blank">Facebook</a> |
+            <a href="http://twitter.com/cursosemvideo" target="_blank">Twitter</a></p>
+    </footer>
+</div>
+</body>
+</html>

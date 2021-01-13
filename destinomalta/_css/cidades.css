@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+section#conteudo {
+    width: 1000px;
+    margin: auto;
+}
+
+iframe#frame-spec {
+    width: 395px;
+    height: 280px;
+    margin-left: 20px;
+    border: none;
+    overflow: hidden;
+}
+
+
+iframe#frame-spec::-webkit-scrollbar {
+    display: none;
+}/* Esta configuração não funcionou, tive que colocar scrooling no no html*/
